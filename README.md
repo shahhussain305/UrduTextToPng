@@ -1,14 +1,13 @@
 # UrduTextToPng
 Saving Urdu Text as a PNG image using html5 canvas.
-<script>
+<script language="javascript" type="text/javascript">
 $(function(){
-
-    var canvas=document.getElementById("canvas");
-    var ctx=canvas.getContext("2d");
+	var canvas=document.getElementById("canvas");
+        var ctx=canvas.getContext("2d");
 	var $fontSize = document.getElementById("fontSize");
 	var $canvasHeight = document.getElementById("canvasHeight");
 	var $canvasWidth = document.getElementById("canvasWidth");
-    var $txt=document.getElementById("txt");
+        var $txt=document.getElementById("txt");
 	
     $txt.onkeyup=function(e){ redrawTexts(); }
 	$fontSize.onkeyup=function(e){ redrawTexts(); }
