@@ -7,6 +7,6 @@ $fileData = base64_decode($img);
 //saving
 $fileName = date('Ymdhisa').'.png';
 file_put_contents("img/".$fileName, $fileData);
-	echo('<hr>Created Image is: <br><img src="pages/img/'.$fileName.'">');
+	echo('<hr>Created Image is: <br><img src="img/'.$fileName.'">');
 }
 ?>
