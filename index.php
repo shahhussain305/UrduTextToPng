@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script language="javascript" type="text/javascript">
 $(function(){
 	var canvas=document.getElementById("canvas");
@@ -48,7 +49,7 @@ function saveImage(){
 		var canvas = document.getElementById("canvas");
 		var data = canvas.toDataURL("image/png");
 		$.ajax({
-			url: "pages/saveAsImage.php",
+			url: "saveAsImage.php",
 			data:{data:data},
 			type:"POST",
 			success:function(r){
